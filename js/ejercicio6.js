@@ -1,10 +1,8 @@
-let num1 = parseInt(prompt("ingresa el primer número: "));
-let num2 = parseInt(prompt("ingresa el segundo número: "));
+let n1 = prompt("Escribe un número");
+let n2 = prompt("Escribe otro número");
 
-if (num1 > num2) {
-    document.write("El " + num1 + " es el número más grande. ");
-} else if (num2 > num1) {
-    document.write("El " + num2 + " es el número más grande. ");
+if (n1 > n2) {
+    alert("El " + n1 + " es el número más grande.");
 } else {
-    document.write("Los dos números son iguales. ");
+    alert("El " + n2 + " es el número más grande.");
 }
