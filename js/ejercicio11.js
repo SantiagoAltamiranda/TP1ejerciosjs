@@ -1,21 +1,7 @@
 let numb = parseInt(prompt("Ingresa un número:"));
-let divisores = "";
 
-if (numb % 2 === 0) {
-    divisores += "2 ";
-}
-if (numb % 3 === 0) {
-    divisores += "3 ";
-}
-if (numb % 5 === 0) {
-    divisores += "5 ";
-}
-if (numb % 7 === 0) {
-    divisores += "7 ";
-}
-
-if (divisores !== "") {
-    alert("El " + numb + " es divisible por " + divisores.trim() + ".");
+if (numb % 2 === 0 || numb % 3 === 0 || numb % 5 === 0 || numb % 7 === 0) {
+    alert("El " + numb + " es divisible por al menos uno de los números: 2, 3, 5 o 7.");
 } else {
-    alert("El " + numb + " no es divisible ni por 2, ni por 3, ni por 5 ni por 7.");
+    alert("El " + numb + " no es divisible por ninguno de los números: 2, 3, 5 ni 7.");
 }
